@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miantsena – Vos listes de courses, simplement</title>
+<meta name="description" content="Miantsena : l’application Android pour préparer vos courses, estimer le budget et cocher ce que vous avez déjà acheté.">
+<link rel="icon" href="logo.png">
+<style>
+:root{
+  --bg:#eef1ff; --bg2:#f7f2ff; --card:#ffffff; --text:#1f2937; --muted:#5b6478;
+  --primary:#5b5bd6; --primary-d:#3730a3; --edge:#c3c9ec; --border:#e3e6f8; --ok:#10b981;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0f1226; --bg2:#14102a; --card:#1a1e3a; --text:#eef1f8; --muted:#a3acc8; --edge:#0b0d1f; --border:#2a3058; }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),var(--bg2));background-attachment:fixed;color:var(--text);line-height:1.6;min-height:100vh}
+header{background:linear-gradient(180deg,#6366f1,#7c3aed);color:#fff;text-align:center;padding:48px 20px 56px;border-radius:0 0 34px 34px;box-shadow:0 8px 0 #312e81}
+header img{width:120px;height:120px;border-radius:26px;margin-bottom:14px;box-shadow:0 8px 0 rgba(49,46,129,.55)}
+h1{font-size:2.4rem;margin-bottom:6px}
+.tagline{max-width:620px;margin:0 auto;font-size:1.1rem;opacity:.92}
+main{max-width:900px;margin:0 auto;padding:36px 20px 40px}
+.buttons{display:flex;flex-direction:column;gap:16px;max-width:420px;margin:0 auto 44px}
+.btn{display:block;text-align:center;text-decoration:none;color:#fff;font-weight:700;font-size:1.08rem;padding:16px 20px;border-radius:16px;background:linear-gradient(180deg,#6366f1,#7c3aed);box-shadow:0 6px 0 var(--primary-d);transition:transform .1s,box-shadow .1s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 0 var(--primary-d)}
+.btn:active{transform:translateY(5px);box-shadow:0 1px 0 var(--primary-d)}
+.note{text-align:center;color:var(--muted);font-size:.9rem;margin-top:-26px;margin-bottom:40px}
+h2{font-size:1.45rem;margin-bottom:18px;text-align:center}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-bottom:44px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:20px;box-shadow:0 6px 0 var(--edge)}
+.card h3{font-size:1.05rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+.steps{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:22px 26px;box-shadow:0 6px 0 var(--edge);margin-bottom:30px}
+.steps ol{padding-left:20px;color:var(--muted)}
+.steps li{margin:6px 0}
+.steps strong{color:var(--text)}
+footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Logo Miantsena">
+  <h1>Miantsena</h1>
+  <p class="tagline">Préparez vos courses, estimez votre budget et cochez ce que vous avez déjà acheté, le tout dans une application simple et agréable.</p>
+</header>
+
+<main>
+  <div class="buttons">
+    <a class="btn" href="Miantsena.apk" download>📱 Télécharger Miantsena</a>
+  </div>
+  <p class="note">Application Android (APK) • gratuite • fonctionne sans internet</p>
+
+  <h2>Pourquoi Miantsena ?</h2>
+  <div class="features">
+    <div class="card">
+      <h3>🛒 Un projet par sortie</h3>
+      <p>Créez un projet avec un nom, une date et la liste des articles à acheter. Retrouvez-les tous sur l’écran d’accueil.</p>
+    </div>
+    <div class="card">
+      <h3>💰 Budget estimé</h3>
+      <p>Le prix est facultatif. Vous ne connaissez pas le prix exact ? Indiquez un prix approximatif : le total s’affiche en bas.</p>
+    </div>
+    <div class="card">
+      <h3>⚖️ Quantités et unités</h3>
+      <p>Pièces, kg, litres, mètres, paquets… Saisissez aussi des décimales, par exemple 0,5 L.</p>
+    </div>
+    <div class="card">
+      <h3>✅ Cases à cocher</h3>
+      <p>Cochez les articles déjà pris et suivez la progression, avec le montant déjà dépensé et le reste à payer.</p>
+    </div>
+    <div class="card">
+      <h3>✏️ Modifier facilement</h3>
+      <p>Un bouton Modifier sur chaque projet, la possibilité de dupliquer une liste et d’annuler une suppression.</p>
+    </div>
+    <div class="card">
+      <h3>📤 Partager la liste</h3>
+      <p>Envoyez votre liste par WhatsApp, SMS ou e-mail en un geste.</p>
+    </div>
+  </div>
+
+  <h2>Comment l’installer ?</h2>
+  <div class="steps">
+    <ol>
+      <li>Appuyez sur <strong>Télécharger Miantsena</strong> depuis votre téléphone Android.</li>
+      <li>Ouvrez le fichier <strong>Miantsena.apk</strong> téléchargé.</li>
+      <li>Si Android le demande, autorisez l’installation depuis cette source (<strong>sources inconnues</strong>).</li>
+      <li>Appuyez sur <strong>Installer</strong>, puis ouvrez l’application.</li>
+    </ol>
+  </div>
+</main>
+
+<footer>
+  © <span id="annee"></span> Miantsena – Tous droits réservés
+</footer>
+
+<script>
+  document.getElementById('annee').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
