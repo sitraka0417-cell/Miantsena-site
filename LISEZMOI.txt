@@ -1,0 +1,8 @@
+Site GitHub Pages - Miantsena
+
+Contenu : index.html, logo.png
+IMPORTANT : ajoutez aussi le fichier Miantsena.apk (compilé par GitHub Actions)
+dans le même dossier que index.html, avec exactement ce nom, sinon le bouton
+de téléchargement ne fonctionnera pas.
+
+Activation : GitHub > Settings > Pages > Source : "Deploy from a branch" > main / (root).
